@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
+using ProductsInventory.API.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProductsInventory.API.Entities
+namespace ProductsInventory.API.Profiles
 {
     public class ProductProfile : Profile
     {

@@ -10,9 +10,9 @@ namespace ProductsInventory.API.Services
     public class ProductsRepository : IProductsRepository, IDisposable
     {
 
-        private readonly ProductsContext _context;
+        private readonly ProductsInventoryContext _context;
 
-        public ProductsRepository(ProductsContext context)
+        public ProductsRepository(ProductsInventoryContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

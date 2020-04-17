@@ -19,7 +19,7 @@ namespace ProductsInventory.API
             {
                 try
                 {
-                    var context = scope.ServiceProvider.GetService<ProductsContext>();
+                    var context = scope.ServiceProvider.GetService<ProductsInventoryContext>();
                     // for demo purposes, delete the database & migrate on startup so 
                     // we can start with a clean slate
                     context.Database.EnsureDeleted();

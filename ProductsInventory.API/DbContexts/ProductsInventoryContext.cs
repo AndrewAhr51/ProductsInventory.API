@@ -5,15 +5,19 @@ using System.Collections.Generic;
 
 namespace ProductsInventory.API.DbContexts
 {
-    public class ProductsContext : DbContext
+    public class ProductsInventoryContext : DbContext
     {
 
-        public ProductsContext(DbContextOptions<ProductsContext> options)
+        public ProductsInventoryContext(DbContextOptions<ProductsInventoryContext> options)
            : base(options)
         {
         }
 
         public DbSet<Products> Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Email> Emails { get; set; }
+        public DbSet<Tag> Tags { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -69,7 +69,7 @@ namespace ProductsInventory.API
 
             services.AddScoped<IProductsRepository, ProductsRepository>();
 
-            services.AddDbContext<ProductsContext>(options =>
+            services.AddDbContext<ProductsInventoryContext>(options =>
             {
                 options.UseSqlServer(
                     @"Server=(localdb)\mssqllocaldb;Database=ProductsDB;Trusted_Connection=True;");

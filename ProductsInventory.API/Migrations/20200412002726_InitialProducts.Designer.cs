@@ -8,7 +8,7 @@ using ProductsInventory.API.DbContexts;
 
 namespace ProductsInventory.API.Migrations
 {
-    [DbContext(typeof(ProductsContext))]
+    [DbContext(typeof(ProductsInventoryContext))]
     [Migration("20200412002726_InitialProducts")]
     partial class InitialProducts
     {
